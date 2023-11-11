@@ -24,7 +24,7 @@ MONGO_URI=your_actual_connection_string
 ```
 Make sure to add .env to your .gitignore file to avoid committing sensitive information.
 
-### to run the project 
+## to run the project 
 ```bash
 npm start
 ```
