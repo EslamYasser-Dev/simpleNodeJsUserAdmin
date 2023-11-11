@@ -4,30 +4,28 @@
 
 Welcome to the documentation for the **Serverless MongoDB Connection task**. This project aims to provide a simple and serverless-friendly way to connect to MongoDB using Mongoose.
 
-## Table of Contents
-
-1. [Installation](#installation)
-2. [Configuration](#configuration)
-3. [Usage](#usage)
-4. [API Reference](#api-reference)
-5. [Frequently Asked Questions (FAQs)](#frequently-asked-questions-faqs)
-
 ## Installation
 
 To install the project dependencies, follow these steps:
 
-``bash
+```bash
 npm install
-Configuration
-MongoDB Connection
-The MongoDB connection string is handled using the MONGO_URI environment variable. You can set it in various ways:
-
-## in terminal:
+```
+### MongoDB connection string is handled using the MONGO_URI environment variable. so in terminal:
 
 Copy code
+```bash 
 export MONGO_URI='your_actual_connection_string'
+```
 
-## Create a file named .env in the root of your project and add:
+### in you project file create a new .env file.
+
+copy this code inside it
+```bash
+MONGO_URI = your_actual_connection_string
+```
+
+### Create a file named .env in the root of your project and add:
 
 MONGO_URI=your_actual_connection_string
 Make sure to add .env to your .gitignore file to avoid committing sensitive information.
