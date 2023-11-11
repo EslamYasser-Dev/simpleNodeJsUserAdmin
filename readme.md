@@ -18,15 +18,14 @@ Copy code
 export MONGO_URI='your_actual_connection_string'
 ```
 
-### in you project file create a new .env file.
-
-copy this code inside it
-```bash
-MONGO_URI = your_actual_connection_string
-```
-
 ### Create a file named .env in the root of your project and add:
-
+```
 MONGO_URI=your_actual_connection_string
+```
 Make sure to add .env to your .gitignore file to avoid committing sensitive information.
 
+### to run the project 
+```bash
+npm start
+```
+then you can do post, get requsets >>> read your console 
