@@ -1,8 +1,8 @@
-# Serverless MongoDB Connection task
+#  MongoDB Connection task
 
 ## Introduction
 
-Welcome to the documentation for the **Serverless MongoDB Connection task**. This project aims to provide a simple and serverless-friendly way to connect to MongoDB using Mongoose.
+Welcome to the documentation for the ** MongoDB Connection task**. This project aims to provide a simple and serverless-friendly way to connect to MongoDB using Mongoose.
 
 ## Installation
 
@@ -11,10 +11,12 @@ To install the project dependencies, follow these steps:
 ```bash
 npm install
 ```
-iam assume that you are runing ubuntu as an OS 
+iam assume that your machine using ubuntu linux as an OS 
 also see here `https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/`
 
 local MongoDB instance may be like => mongodb://localhost:27017/your_localdb_name Adjust your_localdb_name to the name of your local database.
+
+if u hate local db use mongo serverless DB
 
 ### MongoDB connection string is handled using the MONGO_URI environment variable. so in terminal:
 
@@ -32,6 +34,9 @@ JWT_SECRET=your_jwt_secret
 Make sure to add .env to your .gitignore file to avoid committing sensitive information.
 
 ## to run the project 
+```bash
+mongod
+```
 ```bash
 npm start
 ```
