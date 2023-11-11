@@ -16,19 +16,18 @@ Welcome to the documentation for the **Serverless MongoDB Connection task**. Thi
 
 To install the project dependencies, follow these steps:
 
-```bash
+``bash
 npm install
 Configuration
 MongoDB Connection
 The MongoDB connection string is handled using the MONGO_URI environment variable. You can set it in various ways:
 
-Command Line:
+## in terminal:
 
 Copy code
 export MONGO_URI='your_actual_connection_string'
-Environment Variable Files:
 
-Create a file named .env in the root of your project and add:
+## Create a file named .env in the root of your project and add:
 
 MONGO_URI=your_actual_connection_string
 Make sure to add .env to your .gitignore file to avoid committing sensitive information.
