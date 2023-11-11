@@ -11,6 +11,11 @@ To install the project dependencies, follow these steps:
 ```bash
 npm install
 ```
+iam assume that you are runing ubuntu as an OS 
+also see here `https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/`
+
+local MongoDB instance may be like => mongodb://localhost:27017/your_localdb_name Adjust your_localdb_name to the name of your local database.
+
 ### MongoDB connection string is handled using the MONGO_URI environment variable. so in terminal:
 
 Copy code
