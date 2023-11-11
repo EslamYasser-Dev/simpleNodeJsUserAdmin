@@ -2,7 +2,7 @@ const UserModel = require('../models/user');
 const generateHash = require('../utils/generateHash');
 const jwt = require('jsonwebtoken');
 
-const jwtSecret = 'your-secret-key';
+const jwtSecret = process.env.JWT_SECRET;
 
 const createUser = async (req, res) => {
   try {
@@ -17,7 +17,7 @@ const createUser = async (req, res) => {
 
     res.json({ id, accessToken });
   } catch (error) {
-    console.error(error);
+    console.error('Error in createUser:', error);
     res.status(500).json({ error: 'Internal Server Error' });
   }
 };
@@ -38,7 +38,7 @@ const getUser = async (req, res) => {
 
     res.json(user);
   } catch (error) {
-    console.error(error);
+    console.error('Error in getUser:', error);
     res.status(500).json({ error: 'Internal Server Error' });
   }
 };
