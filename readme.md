@@ -16,11 +16,13 @@ npm install
 Copy code
 ```bash 
 export MONGO_URI='your_actual_connection_string'
+export JWT_SECRET='your_jwt_Secret'
 ```
 
 ### Create a file named .env in the root of your project and add:
 ```
 MONGO_URI=your_actual_connection_string
+JWT_SECRET=your_jwt_secret
 ```
 Make sure to add .env to your .gitignore file to avoid committing sensitive information.
 
